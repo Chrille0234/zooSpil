@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body{
+    background-color: #1E293B;
+}
+h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+}
+.game{
+    border: 3px black solid;
+    border-radius: 2px;
+    padding: 10px;
+}
+.pointsystem{
+    width: 10vw;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-left: 5px;
+    padding: 3px;
+    background-color: #3CB35A;
+    border-radius: 10px;
+}
+.highscoresystem{
+    width: 20vw;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-left: 5px;
+    padding: 3px;
+}
+.animals{
+    display: flex;
+    justify-content: space-evenly;
+}
+.animals img{
+    width: 6vw;
+    aspect-ratio: 1;
+    padding: 10px;
+}
+.foods{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5em auto;
+    gap: 2em;
+    padding-top: 3em;
+    border-top: 3px black solid;
+}
+.foods img{
+    width: 5vw;
+    aspect-ratio: 1;
+}
+
+
+.won{
+    animation: infinite 1s party; 
+ }
+ @keyframes party{
+     10%{background-color: blue;}
+     20%{background-color: greenyellow;}
+     30%{background-color: rgb(21, 177, 52);}
+     40%{background-color: rgb(252, 0, 42);}
+     50%{background-color: rgb(83, 197, 17);}
+     60%{background-color: yellow;}
+     70%{background-color: red;}
+     80%{background-color: purple;}
+     100%{background-color: yellow;}
+ }
+

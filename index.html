@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giv dyrene mad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Giv dyrene det korrekte mad</h1>
+
+
+    <article class="game">
+        <div style="display: flex; align-items: center;">
+            <p class="pointsystem">Point: <span id="point">0</span></p>
+            <p class="highscoresystem">Highscore: <span id="highscore">0</span></p>
+        </div>
+        <!-- dyrene -->
+        <div id="animals" class="animals">
+            <section id="tortoise" class="animal drop">
+                <img draggable="false" src="https://em-content.zobj.net/thumbs/160/apple/325/turtle_1f422.png"
+                    alt="Small picture of a tortoise">
+            </section>
+            <section id="worm" class="animal drop">
+                <img draggable="false" src="https://em-content.zobj.net/thumbs/120/apple/325/worm_1fab1.png"
+                    alt="small picture of a worm">
+            </section>
+            <section id="human" class="animal drop">
+                <img draggable="false" src="https://em-content.zobj.net/thumbs/120/apple/325/baby_1f476.png"
+                    alt="picture of a baby">
+            </section>
+            <section id="blobfish" class="animal drop">
+                <img draggable="false" src="images/blobfish.png" alt="picture of a blobfish">
+            </section>
+            <section id="shrimp" class="animal drop">
+                <img draggable="false" src="https://em-content.zobj.net/thumbs/240/apple/325/shrimp_1f990.png"
+                    alt="shrimp emoji">
+            </section>
+            <section id="bird" class="animal drop">
+                <img draggable="false" src="https://em-content.zobj.net/thumbs/240/whatsapp/326/bird_1f426.png"
+                    alt="bird emoji">
+            </section>
+            <section id="pig" class="animal drop">
+                <img draggable="false" src="https://em-content.zobj.net/thumbs/240/whatsapp/326/pig_1f416.png"
+                    alt="pig emoji">
+            </section>
+        </div>
+        <div id="foods" class="foods">
+            <img class="food" id="screw" src="https://em-content.zobj.net/thumbs/240/apple/325/nut-and-bolt_1f529.png"
+                alt="baby bottle">
+
+            <img class="food" id="straws" src="images/sugerør.png" alt="plastic straw">
+
+            <img class="food" id="lettuce" src="https://em-content.zobj.net/thumbs/120/apple/325/leafy-green_1f96c.png"
+                alt="salad">
+
+            <img class="food" id="bottle" src="https://em-content.zobj.net/thumbs/120/apple/325/baby-bottle_1f37c.png"
+                alt="baby bottle">
+
+            <img class="food" id="bacon" src="https://em-content.zobj.net/thumbs/240/google/350/bacon_1f953.png"
+                alt="a piece of bacon">
+
+            <img class="food" id="egg" src="https://em-content.zobj.net/thumbs/240/google/350/egg_1f95a.png"
+                alt="an egg">
+
+            <img class="food" id="potato" src="https://em-content.zobj.net/thumbs/240/apple/325/potato_1f954.png"
+                alt="a potato">
+
+            <img class="food" id="beans" src="https://em-content.zobj.net/thumbs/240/apple/325/beans_1fad8.png"
+                alt="beans">
+
+            <img class="food" id="falafel" src="https://em-content.zobj.net/thumbs/240/apple/325/falafel_1f9c6.png"
+                alt="falafels">
+
+            <img class="food" id="olive" src="https://em-content.zobj.net/thumbs/240/apple/325/olive_1fad2.png"
+                alt="an olive">
+
+            <img class="food" id="croissant" src="https://em-content.zobj.net/thumbs/240/apple/325/croissant_1f950.png"
+                alt="a croissant">
+
+            <img class="food" id="avocado" src="https://em-content.zobj.net/thumbs/240/apple/325/avocado_1f951.png"
+                alt="an avocado">
+
+            <img class="food" id="noodles"
+                src="https://em-content.zobj.net/thumbs/240/apple/325/steaming-bowl_1f35c.png" alt="bowl of noodles">
+
+            <img class="food" id="rice" src="https://em-content.zobj.net/thumbs/240/apple/325/curry-rice_1f35b.png"
+                alt="bowl of rice">
+
+            <img class="food" id="takeaway" src="https://em-content.zobj.net/thumbs/240/apple/325/takeout-box_1f961.png"
+                alt="takeaway food in a box">
+
+            <img class="food" id="canned" src="https://em-content.zobj.net/thumbs/240/apple/325/canned-food_1f96b.png"
+                alt="canned food">
+
+
+
+
+        </div>
+        </div>
+    </article>
+
+    <!-- fikser magisk vis at github pages ikke kan finde javascript filen -->
+    <system.webServer>
+        <handlers>
+        <remove name=”ExtensionlessUrlHandler-ISAPI-4.0_32bit” />
+        <remove name=”ExtensionlessUrlHandler-ISAPI-4.0_64bit” />
+        <remove name=”ExtensionlessUrlHandler-Integrated-4.0″ />
+        <add name=”ExtensionlessUrlHandler-ISAPI32bit” path=”*.” verb=”GET,HEAD,POST,DEBUG,PATCH,OPTIONS” modules=”IsapModule” scriptProcessor=”Microsoft.NETFrameworkaspnet_isapi.dll” preCondition=”classicMode,runtimeVersionv/bitness32″ responseBufferLimit=”0″ />
+        <add name=”ExtensionlessUrlHandler-ISAPI64bit” path=”*.” verb=”GET,HEAD,POST,DEBUG,PATCH,OPTIONS” modules=”IsapModule” scriptProcessor=”Microsoft.NETFramework64aspnet_isapi.dll” preCondition=”classicMode,runtimeVersionv/bitness64″ responseBufferLimit=”0″ />
+        <add name=”ExtensionlessUrlHandler-Integrated4.0″ path=”*.” verb=”GET,HEAD,POST,DEBUG,PATCH,OPTIONS” type=”System.Web.Handlers.TransferRequestHandler” preCondition=”integratedMode,runtimeVersionv4.0″ />
+        </handlers>
+        </system.webServer>
+
+
+
+    <script src="scriptv2.js" defer></script>
+
+</body>
+
+</html>
