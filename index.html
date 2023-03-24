@@ -103,20 +103,6 @@
         </div>
     </article>
 
-    <!-- fikser magisk vis at github pages ikke kan finde javascript filen -->
-    <system.webServer>
-        <handlers>
-        <remove name=”ExtensionlessUrlHandler-ISAPI-4.0_32bit” />
-        <remove name=”ExtensionlessUrlHandler-ISAPI-4.0_64bit” />
-        <remove name=”ExtensionlessUrlHandler-Integrated-4.0″ />
-        <add name=”ExtensionlessUrlHandler-ISAPI32bit” path=”*.” verb=”GET,HEAD,POST,DEBUG,PATCH,OPTIONS” modules=”IsapModule” scriptProcessor=”Microsoft.NETFrameworkaspnet_isapi.dll” preCondition=”classicMode,runtimeVersionv/bitness32″ responseBufferLimit=”0″ />
-        <add name=”ExtensionlessUrlHandler-ISAPI64bit” path=”*.” verb=”GET,HEAD,POST,DEBUG,PATCH,OPTIONS” modules=”IsapModule” scriptProcessor=”Microsoft.NETFramework64aspnet_isapi.dll” preCondition=”classicMode,runtimeVersionv/bitness64″ responseBufferLimit=”0″ />
-        <add name=”ExtensionlessUrlHandler-Integrated4.0″ path=”*.” verb=”GET,HEAD,POST,DEBUG,PATCH,OPTIONS” type=”System.Web.Handlers.TransferRequestHandler” preCondition=”integratedMode,runtimeVersionv4.0″ />
-        </handlers>
-        </system.webServer>
-
-
-
     <script src="scriptv2.js" defer></script>
 
 </body>
